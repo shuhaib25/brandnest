@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandnest Productions | Premium Creative Solutions</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Brandnest Productions - A premium creative agency specializing in unique production, branding, and digital experiences.">
+    <meta name="keywords" content="production, branding, digital agency, creative agency, Brandnest Productions">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- Scroll Progress -->
+<div class="scroll-progress"></div>
+
+<!-- Custom Cursor -->
+<div class="custom-cursor"></div>
+<div class="custom-cursor-inner"></div>
+
+<!-- Preloader -->
+<div id="preloader">
+    <div class="loader"></div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <div class="logo-icon"></div>
+            <span class="brand-name">Brandnest</span>
+        </a>
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+            <i class="fas fa-bars text-white"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto text-uppercase small tracking-widest">
+                <li class="nav-item"><a class="nav-link px-3" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="#portfolio">Our Work</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="#philosophy">Philosophy</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="#process">Our Process</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section with Carousel banner -->
+<section class="hero" id="home">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="10000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&q=80&w=1920"
+                    class="carousel-image" alt="Cinematic Production">
+                <div class="carousel-content-overlay">
+                    <div class="container hero-content">
+                        <h1 class="hero-title" data-aos="zoom-out" data-aos-duration="1500">Elevating Brands <br><span
+                                style="-webkit-text-fill-color: initial; background: none; color: var(--accent-color); text-shadow: 0 0 20px var(--accent-glow);">Through
+                                Vision</span></h1>
+                        <p class="hero-subtitle">Architecting digital legacies through premium cinematic storytelling.
+                        </p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="#portfolio" class="btn btn-custom btn-primary-custom">View Portfolio</a>
+                            <a href="#contact" class="btn btn-custom btn-outline-custom">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1920"
+                    class="carousel-image" alt="Brand Strategy">
+                <div class="carousel-content-overlay">
+                    <div class="container hero-content">
+                        <h2 class="hero-title">Strategic <br><span
+                                style="color: var(--accent-color); -webkit-text-fill-color: initial;">Brand
+                                Identity</span></h2>
+                        <p class="hero-subtitle">Crafting unique narratives that disrupt markets and define industries.
+                        </p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="#services" class="btn btn-custom btn-primary-custom">Our Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=1920"
+                    class="carousel-image" alt="Digital Innovation">
+                <div class="carousel-content-overlay">
+                    <div class="container hero-content">
+                        <h2 class="hero-title">Innovative <br><span
+                                style="color: var(--accent-color); -webkit-text-fill-color: initial;">Content
+                                Creation</span></h2>
+                        <p class="hero-subtitle">Merging technology and art to create unforgettable digital experiences.
+                        </p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="#contact" class="btn btn-custom btn-primary-custom">Partner With Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="py-5" id="services">
+    <div class="container py-5">
+        <h2 class="section-title" data-aos="fade-right">Our Creative Services</h2>
+        <div class="row g-4 mt-4">
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="glass-card h-100">
+                    <i class="fas fa-video service-icon"></i>
+                    <h3>Video Production</h3>
+                    <p class="text-muted">High-quality cinematic storytelling, commercials, and corporate videos that
+                        capture your brand's essence.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="glass-card h-100">
+                    <i class="fas fa-bullhorn service-icon"></i>
+                    <h3>Brand Strategy</h3>
+                    <p class="text-muted">Developing unique identities and strategies that help your business stand out
+                        in a crowded market.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+                <div class="glass-card h-100">
+                    <i class="fas fa-laptop-code service-icon"></i>
+                    <h3>Digital Marketing</h3>
+                    <p class="text-muted">Comprehensive digital campaigns including social media management, SEO, and
+                        content creation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Philosophy Section (New) -->
+<section class="py-5" id="philosophy">
+    <div class="container py-5">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6" data-aos="fade-right">
+                <h5 class="text-uppercase text-accent mb-3" style="color: var(--accent-color); letter-spacing: 5px;">Our
+                    Philosophy</h5>
+                <h2 class="display-4 fw-bold mb-4">Crafting the <span class="text-white">Invisible</span></h2>
+                <p class="text-muted lead mb-4">We believe that the best production is felt, not just seen. Our approach
+                    combines traditional craftsmanship with cutting-edge digital innovation.</p>
+                <div class="d-flex gap-4 mb-4">
+                    <div class="text-center">
+                        <h3 class="fw-bold text-white mb-0">150+</h3>
+                        <small class="text-accent" style="color: var(--accent-color);">Projects</small>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="fw-bold text-white mb-0">45</h3>
+                        <small class="text-accent" style="color: var(--accent-color);">Awards</small>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="fw-bold text-white mb-0">12</h3>
+                        <small class="text-accent" style="color: var(--accent-color);">Years</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="zoom-in-left">
+                <div class="position-relative">
+                    <div class="glass-card" style="padding: 1rem;">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=800"
+                            class="img-fluid rounded-4" alt="Team Work">
+                    </div>
+                    <div class="position-absolute top-100 start-0 translate-middle-y glass-card p-3 shadow-lg"
+                        style="width: 200px; margin-left: -50px;">
+                        <p class="mb-0 small fw-bold text-white">"Innovation is our heartbeat."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Creative Process Section -->
+<section class="py-5" id="process">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-5" data-aos="fade-right">
+                <h5 class="text-uppercase text-accent mb-3" style="color: var(--accent-color); letter-spacing: 5px;">
+                    Evolution</h5>
+                <h2 class="display-5 fw-bold mb-4">How We Bring <br>Your Focus to Life</h2>
+                <p class="text-muted lead">A transparent, meticulous workflow designed for peak creative performance.
+                </p>
+            </div>
+            <div class="col-lg-7">
+                <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">01</div>
+                    <h4 class="text-white">Discovery Call</h4>
+                    <p class="text-muted">We dive deep into your brand's DNA to understand your core objectives and
+                        audience.</p>
+                </div>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">02</div>
+                    <h4 class="text-white">Concept Architecting</h4>
+                    <p class="text-muted">Our creative team drafts unique storyboards and visual styles tailored to your
+                        vision.</p>
+                </div>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">03</div>
+                    <h4 class="text-white">Production Mastery</h4>
+                    <p class="text-muted">Execution with cinema-grade equipment and elite post-production workflows.</p>
+                </div>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-number">04</div>
+                    <h4 class="text-white">Delivery & Beyond</h4>
+                    <p class="text-muted">Strategic deployment of your assets across all digital and physical channels.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- Portfolio Mini Grid -->
+<section class="py-5 bg-dark-subtle" id="portfolio" style="background: rgba(0,0,0,0.2) !important;">
+    <div class="container py-5">
+        <h2 class="section-title text-center d-block mx-auto" data-aos="fade-left">Featured Works</h2>
+        <div class="row g-4 mt-4">
+            <div class="col-md-6" data-aos="fade-up">
+                <div class="position-relative overflow-hidden rounded-4 shadow-lg portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&q=80&w=800"
+                        class="img-fluid w-100" alt="Work 1" style="height: 400px; object-fit: cover;">
+                    <div class="overlay position-absolute bottom-0 start-0 w-100 p-4"
+                        style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                        <h4 class="mb-0">Urban Cinematic Series</h4>
+                        <p class="small text-accent mb-0" style="color: var(--accent-color);">Film Production</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="position-relative overflow-hidden rounded-4 shadow-lg portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800"
+                        class="img-fluid w-100" alt="Work 2" style="height: 400px; object-fit: cover;">
+                    <div class="overlay position-absolute bottom-0 start-0 w-100 p-4"
+                        style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                        <h4 class="mb-0">Global Branding Initiative</h4>
+                        <p class="small text-accent mb-0" style="color: var(--accent-color);">Branding & Identity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="py-5" id="testimonials"
+    style="background: linear-gradient(to bottom, transparent, var(--secondary-color));">
+    <div class="container py-5">
+        <h2 class="section-title" data-aos="fade-up">What Our Clients Say</h2>
+        <div class="row g-4 mt-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="glass-card p-4">
+                    <div class="d-flex mb-3 text-warning">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-muted mb-4" style="font-size: 1.1rem; line-height: 1.7;">"Brandnest transformed our
+                        vision into a cinematic masterpiece. Their attention to detail and creative direction is truly
+                        world-class."</p>
+                    <hr class="border-secondary">
+                    <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-secondary me-3" style="width: 40px; height: 40px;"></div>
+                        <div>
+                            <h6 class="mb-0">Alex Rivers</h6>
+                            <small class="text-muted">CEO, Vortex Media</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for other testimonials -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="glass-card p-4">
+                    <div class="d-flex mb-3 text-warning">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-muted mb-4" style="font-size: 1.1rem; line-height: 1.7;">"Exceptional branding
+                        service. They didn't just design a logo; they built a comprehensive narrative that resonates
+                        with our global audience."</p>
+                    <hr class="border-secondary">
+                    <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-secondary me-3" style="width: 40px; height: 40px;"></div>
+                        <div>
+                            <h6 class="mb-0">Sarah Jenkins</h6>
+                            <small class="text-muted">Creative Director, Bloom</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="glass-card p-4">
+                    <div class="d-flex mb-3 text-warning">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-muted mb-4" style="font-size: 1.1rem; line-height: 1.7;">"The team at Brandnest is
+                        professional, creative, and incredibly responsive. They delivered beyond our expectations on
+                        every milestone."</p>
+                    <hr class="border-secondary">
+                    <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-secondary me-3" style="width: 40px; height: 40px;"></div>
+                        <div>
+                            <h6 class="mb-0">Michael Chen</h6>
+                            <small class="text-muted">Founder, TechNest</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="py-5" id="contact">
+    <div class="container py-5">
+        <div class="glass-card" data-aos="flip-up">
+            <div class="row align-items-center">
+                <div class="col-md-6 p-4">
+                    <h2 class="mb-4">Ready to Build Your <span style="color: var(--accent-color);">Nest?</span></h2>
+                    <p class="text-muted mb-4">Let's collaborate on your next big project. Reach out to us for a custom
+                        quote or just to say hi!</p>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-envelope text-accent me-3" style="color: var(--accent-color);"></i>
+                        <span>hello@brandnest.com</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-phone text-accent me-3" style="color: var(--accent-color);"></i>
+                        <span>+1 (234) 567-890</span>
+                    </div>
+                </div>
+                <div class="col-md-6 p-5 border-start border-secondary" style="background: rgba(255,215,0,0.02);">
+                    <form>
+                        <div class="mb-4">
+                            <label class="small text-muted mb-2 text-uppercase">Identification</label>
+                            <input type="text"
+                                class="form-control bg-transparent text-white border-secondary p-3 shadow-none custom-input"
+                                placeholder="FULL NAME" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="small text-muted mb-2 text-uppercase">Communication</label>
+                            <input type="email"
+                                class="form-control bg-transparent text-white border-secondary p-3 shadow-none custom-input"
+                                placeholder="EMAIL ADDRESS" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="small text-muted mb-2 text-uppercase">Message</label>
+                            <textarea
+                                class="form-control bg-transparent text-white border-secondary p-3 shadow-none custom-input"
+                                rows="4" placeholder="HOW CAN WE HELP?"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="btn btn-custom btn-primary-custom w-100 py-3 shadow-lg mt-2">Initiate
+                            Contact</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4 mb-4 mb-md-0 text-center text-md-start">
+                <a class="navbar-brand d-flex align-items-center justify-content-center justify-content-md-start mb-3"
+                    href="#">
+                    <div class="logo-icon"></div>
+                    <span class="brand-name">Brandnest</span>
+                </a>
+                <p class="text-muted small mb-0">© 2026 Brandnest Productions.<br>Architecting Digital Legacies.</p>
+            </div>
+            <div class="col-md-4 mb-4 mb-md-0 text-center">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                    <a href="#"><i class="fab fa-behance"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4 text-center text-md-end">
+                <ul class="list-unstyled d-flex justify-content-center justify-content-md-end gap-3 mb-0 small">
+                    <li><a href="#" class="text-decoration-none text-muted">Privacy Policy</a></li>
+                    <li><a href="#" class="text-decoration-none text-muted">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AOS Animation Library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false
+    });
+</script>
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+</body>
+
+</html>
