@@ -189,40 +189,13 @@ h4,
 }
 
 /* Logo Re-creation Design */
-.logo-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 38px;
-    height: 38px;
-    border: 3.5px solid #fff;
-    border-radius: 12px 12px 12px 4px;
-    position: relative;
-    margin-right: 12px;
-}
-
-.logo-icon::after {
-    content: '';
-    position: absolute;
-    top: 4px;
-    right: 4px;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid var(--accent-color);
-    transform: rotate(45deg);
-}
-
-.logo-icon::before {
-    content: '';
-    position: absolute;
-    width: 14px;
-    height: 3.5px;
-    background: #fff;
-    top: 50%;
-    left: 4px;
-    transform: translateY(-50%);
+.brand-logo {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    /* Smooth rounded corners */
+    transition: var(--transition);
 }
 
 .section-title {
@@ -321,6 +294,8 @@ h4,
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 20px;
+    /* Rounded hero corners */
     opacity: 0.8;
     /* Increased brightness for 8K feel */
     /* Dim image for better text visibility */
@@ -521,6 +496,7 @@ section {
 
 .portfolio-item img {
     transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-radius: 20px;
 }
 
 .portfolio-item:hover img {
@@ -555,7 +531,7 @@ section {
 }
 
 .btn-primary-custom:hover {
-    background-color: #fff;
+    background-color: #201d1d;
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(245, 158, 11, 0.3);
 }
